@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 const SocialSidebar = () => {
   return (
@@ -30,6 +30,15 @@ const SocialSidebar = () => {
         title="WhatsApp"
       >
         <FaWhatsapp size={24} />
+      </a>
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=dheerajgami22@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-slate-400 hover:text-red-500 transition-all hover:-translate-x-1"
+        title="Email"
+      >
+        <FaEnvelope size={24} />
       </a>
     </div>
   );
