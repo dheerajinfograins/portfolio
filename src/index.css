@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Light Mode Overrides for a smooth transition without rewriting all components */
+html.light-mode body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+html.light-mode .text-white {
+  color: #0f172a !important;
+}
+html.light-mode .text-slate-200,
+html.light-mode .text-slate-300,
+html.light-mode .text-slate-400 {
+  color: #334155 !important;
+}
+html.light-mode .bg-slate-900,
+html.light-mode .bg-slate-800,
+html.light-mode .bg-slate-900\/40,
+html.light-mode .bg-slate-900\/50 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-color: #cbd5e1 !important;
+}
+html.light-mode .border-slate-800,
+html.light-mode .border-slate-700,
+html.light-mode .border-slate-700\/50 {
+  border-color: #cbd5e1 !important;
+}
+html.light-mode .bg-gradient-to-br.from-slate-950 {
+  background-image: linear-gradient(to bottom right, #f8fafc, #f1f5f9, rgba(6, 182, 212, 0.1)) !important;
+}
+html.light-mode .shadow-\[0_0_15px_rgba\(0\,0\,0\,0\.5\)\] {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1) !important;
+}
+html.light-mode .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
