@@ -17,7 +17,7 @@ const Footer = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-          
+
           {/* Brand Section */}
           <div className="flex flex-col space-y-4">
             <h2 className="text-4xl font-bold text-white tracking-wide">
@@ -82,12 +82,12 @@ const Footer = () => {
           <p className="text-slate-500 text-sm">
             &copy; {new Date().getFullYear()} Dheeraj Gami. All rights reserved.
           </p>
-          
+
           <p className="text-slate-500 text-sm flex items-center gap-2">
             Crafted with <span className="text-red-500 animate-pulse text-lg">❤️</span> in React
           </p>
 
-          <button 
+          <button type="button"
             onClick={scrollToTop}
             className="w-10 h-10 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 transition-all duration-300 group"
             aria-label="Back to top"

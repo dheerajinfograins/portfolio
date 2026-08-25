@@ -13,9 +13,9 @@ import leap2 from '../assets/images/leap east/Screenshot 2026-07-29 105708.png';
 import leap3 from '../assets/images/leap east/Screenshot 2026-07-29 105731.png';
 import leap4 from '../assets/images/leap east/Screenshot 2026-07-29 105812.png';
 
-import info1 from '../assets/images/restaurant/screenshot 2026-08-10 160606.png';
-import info2 from '../assets/images/restaurant/screenshot 2026-08-10 160643.png';
-import info3 from '../assets/images/restaurant/screenshot 2026-08-10 160709.png';
+import info1 from '../assets/images/restaurant/Screenshot 2026-08-25 160606.png';
+import info2 from '../assets/images/restaurant/Screenshot 2026-08-25 160643.png';
+import info3 from '../assets/images/restaurant/Screenshot 2026-08-25 160709.png';
 
 
 
@@ -105,13 +105,13 @@ const ProjectCard = ({ project, index }) => {
                 />
 
                 {/* Slider Controls */}
-                <button
+                <button type="button"
                   onClick={prevImg}
                   className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-cyan-500 text-white p-2 rounded-full opacity-0 group-hover/slider:opacity-100 transition-all z-20"
                 >
                   <FaChevronLeft size={12} />
                 </button>
-                <button
+                <button type="button"
                   onClick={nextImg}
                   className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-cyan-500 text-white p-2 rounded-full opacity-0 group-hover/slider:opacity-100 transition-all z-20"
                 >
@@ -120,9 +120,9 @@ const ProjectCard = ({ project, index }) => {
 
                 {/* Slider Dots */}
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-                  {project.images.map((_, i) => (
+                  {project.images.map((img, i) => (
                     <div
-                      key={i}
+                      key={img}
                       className={`w-2 h-2 rounded-full transition-all ${currentImg === i ? 'bg-cyan-400 w-4' : 'bg-white/50'}`}
                     />
                   ))}
@@ -197,7 +197,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
+            <ProjectCard key={project.name} project={project} index={index} />
           ))}
         </div>
       </motion.div>
