@@ -25,10 +25,10 @@ const Hero = () => {
             Dheeraj Gami
           </h1>
           <h2 className="text-2xl md:text-4xl font-bold text-slate-300 mb-10 h-12 md:h-16 flex items-center">
-            A{" "}
+            A {" "}
             <span className="text-cyan-400">
               <Typewriter
-                words={[' MERN Stack Developer', 'Frontend Developer', 'Backend Developer']}
+                words={['MERN Stack Developer', 'Frontend Developer', 'Backend Developer']}
                 loop={true}
                 cursor
                 cursorStyle='_'

@@ -81,6 +81,10 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1200,
     rolldownOptions: {
+      onwarn(warning, warn) {
+        if (warning.code === 'EVAL' || warning.message?.includes('eval')) return;
+        warn(warning);
+      },
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
