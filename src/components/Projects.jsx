@@ -13,10 +13,10 @@ import leap2 from '../assets/images/leap east/Screenshot 2026-07-29 105708.png';
 import leap3 from '../assets/images/leap east/Screenshot 2026-07-29 105731.png';
 import leap4 from '../assets/images/leap east/Screenshot 2026-07-29 105812.png';
 
-import info1 from '../assets/images/infograins/Screenshot 2026-07-29 111557.png';
-import info2 from '../assets/images/infograins/Screenshot 2026-07-29 111620.png';
-import info3 from '../assets/images/infograins/Screenshot 2026-07-29 111722.png';
-import info4 from '../assets/images/infograins/Screenshot 2026-07-29 112009.png';
+import info1 from '../assets/images/restaurant/screenshot 2026-08-10 160606.png';
+import info2 from '../assets/images/restaurant/screenshot 2026-08-10 160643.png';
+import info3 from '../assets/images/restaurant/screenshot 2026-08-10 160709.png';
+
 
 
 const projects = [
@@ -37,12 +37,12 @@ const projects = [
     demo: 'https://leap-east-2026.infograins.com/'
   },
   {
-    name: 'Infograins Software Solutions',
-    description: 'A comprehensive corporate website showcasing innovative digital solutions, specialized services, and industry expertise.',
-    tags: ['React', 'Python', 'Web3', 'Tailwind CSS'],
-    images: [info1, info2, info3, info4],
-    // github: 'https://github.com/ranjeetinfograins/infograins-fronted',
-    demo: 'https://infograins.com/'
+    name: 'Restaurant Management System',
+    description: 'A Restaurant Management System that helps restaurant owners manage their orders, tables, customers, and kitchen staff.',
+    tags: ['Next.js', 'Web3', 'Tailwind CSS'],
+    images: [info1, info2, info3],
+    // github: 'https://github.com/dheerajinfograins/restaurant',
+    demo: 'https://restaurant-pnpvskgy3-dheeraj20.vercel.app/'
   }
 ];
 

@@ -5,12 +5,12 @@ import Earth from '../canvas/Earth';
 const Hero = () => {
   return (
     <section id="hero" className="relative w-full min-h-screen mx-auto flex items-center px-6 md:px-12 pt-20 max-w-7xl overflow-hidden">
-      
+
       {/* Background Glow */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full h-full z-10 gap-8">
-        
+
         {/* Left Side: Content */}
         <motion.div
           initial={{ opacity: 0, x: -150 }}
@@ -38,19 +38,19 @@ const Hero = () => {
               />
             </span>
           </h2>
-          
+
           <div className="flex flex-wrap gap-4">
             <a href="#contact" className="px-8 py-3 rounded-full bg-cyan-500 text-slate-950 font-bold hover:bg-cyan-400 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.4)]">
               Hire Me
             </a>
-            <a href="/Dheeraj_Gami_Resume.docx" download="Dheeraj_Gami_Resume.docx" className="px-8 py-3 rounded-full border-2 border-cyan-500 text-cyan-400 font-bold hover:bg-cyan-500/10 transition-all duration-300">
+            <a href="/Dheeraj_Gami_Modern_Professional_Resume_260710_114722 (1)" download="Dheeraj_Gami_Modern_Professional_Resume_260710_114722 (1)" className="px-8 py-3 rounded-full border-2 border-cyan-500 text-cyan-400 font-bold hover:bg-cyan-500/10 transition-all duration-300">
               Download Resume
             </a>
           </div>
         </motion.div>
 
         {/* Right Side: 3D Earth */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 150 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -61,8 +61,8 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div 
-        animate={{ y: [0, 10, 0] }} 
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
