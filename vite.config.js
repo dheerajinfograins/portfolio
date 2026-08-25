@@ -26,7 +26,9 @@ const localApiPlugin = () => ({
             }
 
             const transporter = nodemailer.createTransport({
-              service: 'gmail',
+              host: 'smtp.gmail.com',
+              port: 465,
+              secure: true,
               auth: {
                 user: 'dheerajgami22@gmail.com',
                 pass: 'tabo snlu tlrs jdhg'
@@ -76,4 +78,21 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
     localApiPlugin()
   ],
+  build: {
+    chunkSizeWarningLimit: 1200,
+    rolldownOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('three') || id.includes('@react-three')) {
+              return 'three-vendor';
+            }
+            if (id.includes('framer-motion') || id.includes('gsap')) {
+              return 'animation-vendor';
+            }
+          }
+        }
+      }
+    }
+  }
 })

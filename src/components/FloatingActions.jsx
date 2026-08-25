@@ -44,7 +44,7 @@ const FloatingActions = () => {
 
   return (
     <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-[9000]">
-      <button 
+      <button type='button'
         onClick={toggleMusic}
         className="w-12 h-12 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center text-cyan-400 shadow-lg shadow-cyan-900/20 hover:bg-slate-700 hover:scale-110 hover:text-cyan-300 transition-all"
         title="Toggle Music"
@@ -52,7 +52,7 @@ const FloatingActions = () => {
         {isPlaying ? <FaPause size={16} /> : <FaPlay size={16} />}
       </button>
 
-      <button 
+      <button type='button'
         onClick={toggleTheme}
         className="w-12 h-12 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center text-purple-400 shadow-lg shadow-purple-900/20 hover:bg-slate-700 hover:scale-110 hover:text-purple-300 transition-all"
         title="Toggle Theme"

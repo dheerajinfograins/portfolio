@@ -55,7 +55,7 @@ const About = () => {
 
           {/* Tabs for Education, Experience, Tech Stack */}
           <div className="flex flex-wrap gap-6 mb-6 border-b border-slate-800 pb-4">
-            <button
+            <button type='button'
               onClick={() => setActiveTab('education')}
               className={`font-semibold text-lg transition-colors relative ${activeTab === 'education' ? 'text-cyan-400' : 'text-slate-500 hover:text-slate-300'}`}
             >
@@ -64,7 +64,7 @@ const About = () => {
                 <motion.div layoutId="activeTabIndicator" className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-cyan-400" />
               )}
             </button>
-            <button
+            <button type='button'
               onClick={() => setActiveTab('experience')}
               className={`font-semibold text-lg transition-colors relative ${activeTab === 'experience' ? 'text-cyan-400' : 'text-slate-500 hover:text-slate-300'}`}
             >
@@ -73,7 +73,7 @@ const About = () => {
                 <motion.div layoutId="activeTabIndicator" className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-cyan-400" />
               )}
             </button>
-            <button
+            <button type='button'
               onClick={() => setActiveTab('tech')}
               className={`font-semibold text-lg transition-colors relative ${activeTab === 'tech' ? 'text-cyan-400' : 'text-slate-500 hover:text-slate-300'}`}
             >

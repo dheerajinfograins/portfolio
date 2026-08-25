@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
+        <button type='button'
           className="md:hidden text-2xl text-slate-200 focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
